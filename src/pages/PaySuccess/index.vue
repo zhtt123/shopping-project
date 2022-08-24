@@ -21,8 +21,8 @@
   export default {
     name: 'PaySuccess',
     //组内路由守卫
-    beforeRouteEnter(from,to,next) {
-      if(from.path.indexOf('/pay')!==-1) {
+    beforeRouteEnter(to,from,next) {
+      if(from.path=='/pay/') {
         next()
       } else {
         next(false)
